@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
-const assign = require('object.assign');
-const entries = require('object.entries');
+const { isArray } = Array;
+const { entries } = Object;
 const { ESLint } = require('eslint');
 
 const baseConfig = require('.');
@@ -10,7 +10,7 @@ const whitespaceRules = require('./whitespaceRules');
 const severities = ['off', 'warn', 'error'];
 
 function getSeverity(ruleConfig) {
-  if (Array.isArray(ruleConfig)) {
+  if (isArray(ruleConfig)) {
     return getSeverity(ruleConfig[0]);
   }
   if (typeof ruleConfig === 'number') {
@@ -20,7 +20,7 @@ function getSeverity(ruleConfig) {
 }
 
 async function onlyErrorOnRules(rulesToError, config) {
-  const errorsOnly = assign({}, config);
+  const errorsOnly = { ...config };
   const cli = new ESLint({
     useEslintrc: false,
     baseConfig: config
@@ -33,7 +33,7 @@ async function onlyErrorOnRules(rulesToError, config) {
     const severity = getSeverity(ruleConfig);
 
     if (rulesToError.indexOf(ruleName) === -1 && severity === 'error') {
-      if (Array.isArray(ruleConfig)) {
+      if (isArray(ruleConfig)) {
         errorsOnly.rules[ruleName] = ['warn'].concat(ruleConfig.slice(1));
       } else if (typeof ruleConfig === 'number') {
         errorsOnly.rules[ruleName] = 1;

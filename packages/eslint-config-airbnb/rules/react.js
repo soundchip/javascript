@@ -1,4 +1,3 @@
-const assign = require('object.assign');
 const baseStyleRules = require('eslint-config-airbnb-base/rules/style').rules;
 
 const dangleRules = baseStyleRules['no-underscore-dangle'];
@@ -17,9 +16,10 @@ module.exports = {
   // View link below for react rules documentation
   // https://github.com/jsx-eslint/eslint-plugin-react#list-of-supported-rules
   rules: {
-    'no-underscore-dangle': [dangleRules[0], assign({}, dangleRules[1], {
+    'no-underscore-dangle': [dangleRules[0], {
+      ...dangleRules[1],
       allow: dangleRules[1].allow.concat(['__REDUX_DEVTOOLS_EXTENSION_COMPOSE__']),
-    })],
+    }],
 
     // Specify whether double or single quotes should be used in JSX attributes
     // https://eslint.org/docs/rules/jsx-quotes
@@ -44,6 +44,13 @@ module.exports = {
         'componentDidCatch',
         'getSnapshotBeforeUpdate'
       ],
+    }],
+
+    // This rule enforces onChange or readonly attribute for checked property of input elements.
+    // https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/checked-requires-onchange-or-readonly.md
+    'react/checked-requires-onchange-or-readonly': ['off', {
+      ignoreMissingProperties: false,
+      ignoreExclusiveCheckedAttribute: false
     }],
 
     // Prevent missing displayName in a React component definition
@@ -575,6 +582,24 @@ module.exports = {
     // https://github.com/jsx-eslint/eslint-plugin-react/blob/c42b624d0fb9ad647583a775ab9751091eec066f/docs/rules/jsx-no-leaked-render.md
     // TODO: semver-major, enable
     'react/jsx-no-leaked-render': 'off',
+
+    // https://github.com/jsx-eslint/eslint-plugin-react/blob/66b58dd4864678eb869a7bf434c72ff7ac530eb1/docs/rules/no-object-type-as-default-prop.md
+    // TODO: semver-major, enable
+    'react/no-object-type-as-default-prop': 'off',
+
+    // https://github.com/jsx-eslint/eslint-plugin-react/blob/66b58dd4864678eb869a7bf434c72ff7ac530eb1/docs/rules/sort-default-props.md
+    // TODO: semver-major, enable?
+    'react/sort-default-props': ['off', {
+      ignoreCase: false
+    }],
+
+    // https://github.com/jsx-eslint/eslint-plugin-react/blob/9668ee0762acd5c23f53cd3a372e2d8d9563944d/docs/rules/forward-ref-uses-ref.md
+    // TODO: semver-major, enable
+    'react/forward-ref-uses-ref': 'off',
+
+    // https://github.com/jsx-eslint/eslint-plugin-react/blob/9668ee0762acd5c23f53cd3a372e2d8d9563944d/docs/rules/jsx-props-no-spread-multi.md
+    // TODO: semver-major, enable
+    'react/jsx-props-no-spread-multi': 'off',
   },
 
   settings: {

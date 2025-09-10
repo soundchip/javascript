@@ -67,6 +67,7 @@ module.exports = {
 
     // disallow the use of alert, confirm, and prompt
     // https://eslint.org/docs/rules/no-alert
+    // TODO: enable, semver-major
     'no-alert': 'warn',
 
     // disallow use of arguments.caller or arguments.callee
@@ -102,6 +103,11 @@ module.exports = {
     // disallow empty destructuring patterns
     // https://eslint.org/docs/rules/no-empty-pattern
     'no-empty-pattern': 'error',
+
+    // Disallow empty static blocks
+    // https://eslint.org/docs/latest/rules/no-empty-static-block
+    // TODO: semver-major, enable
+    'no-empty-static-block': 'off',
 
     // disallow comparisons to null without a type-checking operator
     // https://eslint.org/docs/rules/no-eq-null
@@ -210,6 +216,11 @@ module.exports = {
     // Disallow \8 and \9 escape sequences in string literals
     // https://eslint.org/docs/rules/no-nonoctal-decimal-escape
     'no-nonoctal-decimal-escape': 'error',
+
+    // Disallow calls to the Object constructor without an argument
+    // https://eslint.org/docs/latest/rules/no-object-constructor
+    // TODO: enable, semver-major
+    'no-object-constructor': 'off',
 
     // disallow use of (old style) octal literals
     // https://eslint.org/docs/rules/no-octal
