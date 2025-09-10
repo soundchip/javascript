@@ -3999,4 +3999,16 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 We encourage you to fork this guide and change the rules to fit your team’s style guide. Below, you may list some amendments to the style guide. This allows you to periodically update your style guide without having to deal with merge conflicts.
 
-# };
+---
+
+## Repography
+
+## [![Repography logo](https://images.repography.com/logo.svg)](https://repography.com) / Recent activity [![Time period](https://images.repography.com/85154791/soundchip/javascript/recent-activity/VrfMJZyZ6WZDzJqqlig54k5jz6F_8DnZXofmR2I2G-Y/L-q-tYTQijXEzhPK6EOENdAEZX6_-evaWudbNPrAHRU_badge.svg)](https://repography.com)
+[![Timeline graph](https://images.repography.com/85154791/soundchip/javascript/recent-activity/VrfMJZyZ6WZDzJqqlig54k5jz6F_8DnZXofmR2I2G-Y/L-q-tYTQijXEzhPK6EOENdAEZX6_-evaWudbNPrAHRU_timeline.svg)](https://github.com/soundchip/javascript/commits)
+[![Issue status graph](https://images.repography.com/85154791/soundchip/javascript/recent-activity/VrfMJZyZ6WZDzJqqlig54k5jz6F_8DnZXofmR2I2G-Y/L-q-tYTQijXEzhPK6EOENdAEZX6_-evaWudbNPrAHRU_issues.svg)](https://github.com/soundchip/javascript/issues)
+[![Pull request status graph](https://images.repography.com/85154791/soundchip/javascript/recent-activity/VrfMJZyZ6WZDzJqqlig54k5jz6F_8DnZXofmR2I2G-Y/L-q-tYTQijXEzhPK6EOENdAEZX6_-evaWudbNPrAHRU_prs.svg)](https://github.com/soundchip/javascript/pulls)
+[![Trending topics](https://images.repography.com/85154791/soundchip/javascript/recent-activity/VrfMJZyZ6WZDzJqqlig54k5jz6F_8DnZXofmR2I2G-Y/L-q-tYTQijXEzhPK6EOENdAEZX6_-evaWudbNPrAHRU_words.svg)](https://github.com/soundchip/javascript/commits)
+[![Top contributors](https://images.repography.com/85154791/soundchip/javascript/recent-activity/VrfMJZyZ6WZDzJqqlig54k5jz6F_8DnZXofmR2I2G-Y/L-q-tYTQijXEzhPK6EOENdAEZX6_-evaWudbNPrAHRU_users.svg)](https://github.com/soundchip/javascript/graphs/contributors)
+[![Activity map](https://images.repography.com/85154791/soundchip/javascript/recent-activity/VrfMJZyZ6WZDzJqqlig54k5jz6F_8DnZXofmR2I2G-Y/L-q-tYTQijXEzhPK6EOENdAEZX6_-evaWudbNPrAHRU_map.svg)](https://github.com/soundchip/javascript/commits)
+
+
